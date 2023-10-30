@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <p align="center">
   <img width="320" src="https://wpimg.wallstcn.com/ecc53a42-d79b-42e2-8852-5126b810a4c8.svg">
 </p>
@@ -31,8 +25,6 @@
     <img src="https://img.shields.io/badge/%24-donate-ff69b4.svg" alt="donate">
   </a>
 </p>
-
-简体中文 | [English](./README.md) | [日本語](./README.ja.md) | [Spanish](./README.es.md)
 
 <p align="center">
   <b>SPONSORED BY</b>
