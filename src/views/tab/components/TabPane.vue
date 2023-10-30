@@ -12,38 +12,38 @@
       </template>
     </el-table-column>
 
-    <el-table-column width="180px" align="center" label="Date">
+    <el-table-column width="180px" align="center" label="日期">
       <template slot-scope="scope">
         <span>{{ scope.row.timestamp | parseTime('{y}-{m}-{d} {h}:{i}') }}</span>
       </template>
     </el-table-column>
 
-    <el-table-column min-width="300px" label="Title">
+    <el-table-column min-width="300px" label="标题">
       <template slot-scope="{row}">
         <span>{{ row.title }}</span>
         <el-tag>{{ row.type }}</el-tag>
       </template>
     </el-table-column>
 
-    <el-table-column width="110px" align="center" label="Author">
+    <el-table-column width="110px" align="center" label="作者">
       <template slot-scope="scope">
         <span>{{ scope.row.author }}</span>
       </template>
     </el-table-column>
 
-    <el-table-column width="120px" label="Importance">
+    <el-table-column width="120px" label="重要性">
       <template slot-scope="scope">
         <svg-icon v-for="n in +scope.row.importance" :key="n" icon-class="star" />
       </template>
     </el-table-column>
 
-    <el-table-column align="center" label="Readings" width="95">
+    <el-table-column align="center" label="阅读量" width="95">
       <template slot-scope="scope">
         <span>{{ scope.row.pageviews }}</span>
       </template>
     </el-table-column>
 
-    <el-table-column class-name="status-col" label="Status" width="110">
+    <el-table-column class-name="status-col" label="状态" width="110">
       <template slot-scope="{row}">
         <el-tag :type="row.status | statusFilter">
           {{ row.status }}

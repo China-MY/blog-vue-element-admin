@@ -8,10 +8,10 @@
       <el-dropdown-item>
         <el-radio-group v-model="comment_disabled" style="padding: 10px;">
           <el-radio :label="true">
-            Close comment
+            关闭评论
           </el-radio>
           <el-radio :label="false">
-            Open comment
+            开启评论
           </el-radio>
         </el-radio-group>
       </el-dropdown-item>

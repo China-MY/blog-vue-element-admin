@@ -2,34 +2,37 @@
   <div class="app-container">
     <el-card class="box-card">
       <div slot="header">
-        <a class="link-type link-title" target="_blank" href="https://panjiachen.github.io/vue-element-admin-site/guide/advanced/theme.html">
-          Theme documentation
+        <a
+          class="link-type link-title"
+          target="_blank"
+          href="https://panjiachen.github.io/vue-element-admin-site/guide/advanced/theme.html"
+        >
+          主题的文档
         </a>
       </div>
       <div class="box-item">
-        <span class="field-label">Change Theme : </span>
+        <span class="field-label">改变主题: </span>
         <el-switch v-model="theme" />
         <aside style="margin-top:15px;">
-          Tips: It is different from the theme-pick on the navbar is two different skinning methods, each with different application scenarios. Refer to the documentation for details.
-        </aside>
-      </div>
+          Tips:它不同于导航栏上的主题选择是两种不同的蒙皮方法，每种方法都有不同的应用场景。详细信息请参考文档。
+        </aside></div>
     </el-card>
 
     <div class="block">
       <el-button type="primary">
-        Primary
+        主要的
       </el-button>
       <el-button type="success">
-        Success
+        完成
       </el-button>
       <el-button type="info">
-        Info
+        信息
       </el-button>
       <el-button type="warning">
-        Warning
+        警告
       </el-button>
       <el-button type="danger">
-        Danger
+        危险
       </el-button>
     </div>
 
@@ -38,10 +41,10 @@
       <el-button type="primary" icon="el-icon-share" />
       <el-button type="primary" icon="el-icon-delete" />
       <el-button type="primary" icon="el-icon-search">
-        Search
+        搜索
       </el-button>
       <el-button type="primary">
-        Upload
+        上传
         <i class="el-icon-upload el-icon-right" />
       </el-button>
     </div>
@@ -55,13 +58,13 @@
     <div class="block">
       <el-radio-group v-model="radio">
         <el-radio :label="3">
-          Option A
+          选项 A
         </el-radio>
         <el-radio :label="6">
-          Option B
+          选项 B
         </el-radio>
         <el-radio :label="9">
-          Option C
+          选项 C
         </el-radio>
       </el-radio-group>
     </div>
@@ -82,11 +85,11 @@ export default {
     return {
       theme: false,
       tags: [
-        { name: 'Tag One', type: '' },
-        { name: 'Tag Two', type: 'info' },
-        { name: 'Tag Three', type: 'success' },
-        { name: 'Tag Four', type: 'warning' },
-        { name: 'Tag Five', type: 'danger' }
+        { name: '标签1', type: '' },
+        { name: '标签2', type: 'info' },
+        { name: '标签3', type: 'success' },
+        { name: '标签4 ', type: 'warning' },
+        { name: '标签5 ', type: 'danger' }
       ],
       slideValue: 50,
       radio: 3
@@ -101,9 +104,10 @@ export default {
 </script>
 
 <style scoped>
-.field-label{
+.field-label {
   vertical-align: middle;
 }
+
 .box-card {
   width: 400px;
   max-width: 100%;

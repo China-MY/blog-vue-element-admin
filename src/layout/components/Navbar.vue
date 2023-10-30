@@ -25,7 +25,7 @@
         </div>
         <el-dropdown-menu slot="dropdown">
           <router-link to="/profile/index">
-            <el-dropdown-item>配置文件</el-dropdown-item>
+            <el-dropdown-item>个人信息</el-dropdown-item>
           </router-link>
           <router-link to="/">
             <el-dropdown-item>首页</el-dropdown-item>

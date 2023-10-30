@@ -7,25 +7,25 @@
         </template>
       </el-table-column>
 
-      <el-table-column width="180px" align="center" label="Date">
+      <el-table-column width="180px" align="center" label="日期">
         <template slot-scope="{row}">
           <span>{{ row.timestamp | parseTime('{y}-{m}-{d} {h}:{i}') }}</span>
         </template>
       </el-table-column>
 
-      <el-table-column width="120px" align="center" label="Author">
+      <el-table-column width="120px" align="center" label="作者">
         <template slot-scope="{row}">
           <span>{{ row.author }}</span>
         </template>
       </el-table-column>
 
-      <el-table-column width="100px" label="Importance">
+      <el-table-column width="100px" label="评价">
         <template slot-scope="{row}">
           <svg-icon v-for="n in + row.importance" :key="n" icon-class="star" class="meta-item__icon" />
         </template>
       </el-table-column>
 
-      <el-table-column class-name="status-col" label="Status" width="110">
+      <el-table-column class-name="status-col" label="状态" width="110">
         <template slot-scope="{row}">
           <el-tag :type="row.status | statusFilter">
             {{ row.status }}
@@ -33,7 +33,7 @@
         </template>
       </el-table-column>
 
-      <el-table-column min-width="300px" label="Title">
+      <el-table-column min-width="300px" label="标题">
         <template slot-scope="{row}">
           <template v-if="row.edit">
             <el-input v-model="row.title" class="edit-input" size="small" />
@@ -44,14 +44,14 @@
               type="warning"
               @click="cancelEdit(row)"
             >
-              cancel
+              取消
             </el-button>
           </template>
           <span v-else>{{ row.title }}</span>
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="Actions" width="120">
+      <el-table-column align="center" label="操作" width="120">
         <template slot-scope="{row}">
           <el-button
             v-if="row.edit"
@@ -69,7 +69,7 @@
             icon="el-icon-edit"
             @click="row.edit=!row.edit"
           >
-            Edit
+            编辑
           </el-button>
         </template>
       </el-table-column>

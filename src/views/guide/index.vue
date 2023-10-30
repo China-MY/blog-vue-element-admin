@@ -1,12 +1,12 @@
 <template>
   <div class="app-container">
     <aside>
-      The guide page is useful for some people who entered the project for the first time. You can briefly introduce the
-      features of the project. Demo is based on
-      <a href="https://github.com/kamranahmedse/driver.js" target="_blank">driver.js.</a>
+      指南页面对于第一次进入这个项目的人很有用。你可以简单介绍一下
+      项目的特点。演示基于
+      <a href="https://github.com/kamranahmedse/driver.js" target="_blank">driver.js</a>
     </aside>
     <el-button icon="el-icon-question" type="primary" @click.prevent.stop="guide">
-      Show Guide
+      节目指南
     </el-button>
   </div>
 </template>

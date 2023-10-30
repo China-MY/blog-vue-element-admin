@@ -3,17 +3,17 @@
     <el-row>
       <el-card class="box-card">
         <div slot="header" class="clearfix">
-          <span>Buttons</span>
+          <span>按钮</span>
         </div>
         <div style="margin-bottom:50px;">
           <el-col :span="4" class="text-center">
             <router-link class="pan-btn blue-btn" to="/documentation/index">
-              Documentation
+              文档
             </router-link>
           </el-col>
           <el-col :span="4" class="text-center">
             <router-link class="pan-btn light-blue-btn" to="/icon/index">
-              Icons
+              图标
             </router-link>
           </el-col>
           <el-col :span="4" class="text-center">
@@ -23,17 +23,17 @@
           </el-col>
           <el-col :span="4" class="text-center">
             <router-link class="pan-btn green-btn" to="/table/complex-table">
-              Table
+              表格
             </router-link>
           </el-col>
           <el-col :span="4" class="text-center">
             <router-link class="pan-btn tiffany-btn" to="/example/create">
-              Form
+              形式
             </router-link>
           </el-col>
           <el-col :span="4" class="text-center">
             <router-link class="pan-btn yellow-btn" to="/theme/index">
-              Theme
+              主题
             </router-link>
           </el-col>
         </div>
@@ -44,7 +44,7 @@
       <el-col :span="6">
         <el-card class="box-card">
           <div slot="header" class="clearfix">
-            <span>Material Design 的input</span>
+            <span>材料设计的输入</span>
           </div>
           <div style="height:100px;">
             <el-form :model="demo" :rules="demoRules">
@@ -87,7 +87,7 @@
       <el-col :span="6">
         <el-card class="box-card">
           <div slot="header" class="clearfix">
-            <span>hover text</span>
+            <span>悬停文本</span>
           </div>
           <div class="component-item">
             <mallki class-name="mallki-text" text="vue-element-admin" />
@@ -100,7 +100,7 @@
       <el-col :span="8">
         <el-card class="box-card">
           <div slot="header" class="clearfix">
-            <span>Share</span>
+            <span>分享</span>
           </div>
           <div class="component-item" style="height:420px;">
             <dropdown-menu :items="articleList" style="margin:0 auto;" title="系列文章" />

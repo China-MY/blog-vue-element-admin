@@ -7,10 +7,10 @@
         <PlatformDropdown v-model="postForm.platforms" />
         <SourceUrlDropdown v-model="postForm.source_uri" />
         <el-button v-loading="loading" style="margin-left: 10px;" type="success" @click="submitForm">
-          Publish
+          发布
         </el-button>
         <el-button v-loading="loading" type="warning" @click="draftForm">
-          Draft
+          草稿
         </el-button>
       </sticky>
 
@@ -21,28 +21,28 @@
           <el-col :span="24">
             <el-form-item style="margin-bottom: 40px;" prop="title">
               <MDinput v-model="postForm.title" :maxlength="100" name="name" required>
-                Title
+                标题
               </MDinput>
             </el-form-item>
 
             <div class="postInfo-container">
               <el-row>
                 <el-col :span="8">
-                  <el-form-item label-width="60px" label="Author:" class="postInfo-container-item">
-                    <el-select v-model="postForm.author" :remote-method="getRemoteUserList" filterable default-first-option remote placeholder="Search user">
+                  <el-form-item label-width="60px" label="作者:" class="postInfo-container-item">
+                    <el-select v-model="postForm.author" :remote-method="getRemoteUserList" filterable default-first-option remote placeholder="搜索用户">
                       <el-option v-for="(item,index) in userListOptions" :key="item+index" :label="item" :value="item" />
                     </el-select>
                   </el-form-item>
                 </el-col>
 
                 <el-col :span="10">
-                  <el-form-item label-width="120px" label="Publish Time:" class="postInfo-container-item">
-                    <el-date-picker v-model="displayTime" type="datetime" format="yyyy-MM-dd HH:mm:ss" placeholder="Select date and time" />
+                  <el-form-item label-width="120px" label="发布 时间:" class="postInfo-container-item">
+                    <el-date-picker v-model="displayTime" type="datetime" format="yyyy-MM-dd HH:mm:ss" placeholder="选择日期和时间" />
                   </el-form-item>
                 </el-col>
 
                 <el-col :span="6">
-                  <el-form-item label-width="90px" label="Importance:" class="postInfo-container-item">
+                  <el-form-item label-width="90px" label="重要性:" class="postInfo-container-item">
                     <el-rate
                       v-model="postForm.importance"
                       :max="3"
@@ -58,8 +58,8 @@
           </el-col>
         </el-row>
 
-        <el-form-item style="margin-bottom: 40px;" label-width="70px" label="Summary:">
-          <el-input v-model="postForm.content_short" :rows="1" type="textarea" class="article-textarea" autosize placeholder="Please enter the content" />
+        <el-form-item style="margin-bottom: 40px;" label-width="70px" label="总结:">
+          <el-input v-model="postForm.content_short" :rows="1" type="textarea" class="article-textarea" autosize placeholder="请输入内容" />
           <span v-show="contentShortLength" class="word-counter">{{ contentShortLength }}words</span>
         </el-form-item>
 

@@ -8,37 +8,37 @@
         </template>
       </el-table-column>
 
-      <el-table-column width="180px" align="center" label="Date">
+      <el-table-column width="180px" align="center" label="日期">
         <template slot-scope="{row}">
           <span>{{ row.timestamp | parseTime('{y}-{m}-{d} {h}:{i}') }}</span>
         </template>
       </el-table-column>
 
-      <el-table-column min-width="300px" label="Title">
+      <el-table-column min-width="300px" label="标题">
         <template slot-scope="{row}">
           <span>{{ row.title }}</span>
         </template>
       </el-table-column>
 
-      <el-table-column width="110px" align="center" label="Author">
+      <el-table-column width="110px" align="center" label="作者">
         <template slot-scope="{row}">
           <span>{{ row.author }}</span>
         </template>
       </el-table-column>
 
-      <el-table-column width="100px" label="Importance">
+      <el-table-column width="100px" label="评价">
         <template slot-scope="{row}">
           <svg-icon v-for="n in + row.importance" :key="n" icon-class="star" class="icon-star" />
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="Readings" width="95">
+      <el-table-column align="center" label="阅读量" width="95">
         <template slot-scope="{row}">
           <span>{{ row.pageviews }}</span>
         </template>
       </el-table-column>
 
-      <el-table-column class-name="status-col" label="Status" width="110">
+      <el-table-column class-name="status-col" label="状态" width="110">
         <template slot-scope="{row}">
           <el-tag :type="row.status | statusFilter">
             {{ row.status }}
@@ -46,17 +46,17 @@
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="Drag" width="80">
+      <el-table-column align="center" label="拖动" width="80">
         <template slot-scope="{}">
           <svg-icon class="drag-handler" icon-class="drag" />
         </template>
       </el-table-column>
     </el-table>
     <div class="show-d">
-      <el-tag>The default order :</el-tag> {{ oldList }}
+      <el-tag>默认顺序:</el-tag> {{ oldList }}
     </div>
     <div class="show-d">
-      <el-tag>The after dragging order :</el-tag> {{ newList }}
+      <el-tag>拖后顺序:</el-tag> {{ newList }}
     </div>
   </div>
 </template>

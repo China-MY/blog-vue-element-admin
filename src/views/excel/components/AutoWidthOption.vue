@@ -1,12 +1,12 @@
 <template>
   <div style="display:inline-block;">
-    <label class="radio-label">Cell Auto-Width: </label>
+    <label class="radio-label">单元格自动宽度: </label>
     <el-radio-group v-model="autoWidth">
       <el-radio :label="true" border>
-        True
+        正确
       </el-radio>
       <el-radio :label="false" border>
-        False
+        错误
       </el-radio>
     </el-radio-group>
   </div>

@@ -1,13 +1,13 @@
 <template>
   <el-form>
-    <el-form-item label="Name">
+    <el-form-item label="用户名">
       <el-input v-model.trim="user.name" />
     </el-form-item>
-    <el-form-item label="Email">
+    <el-form-item label="电子邮件">
       <el-input v-model.trim="user.email" />
     </el-form-item>
     <el-form-item>
-      <el-button type="primary" @click="submit">Update</el-button>
+      <el-button type="primary" @click="submit">上传</el-button>
     </el-form-item>
   </el-form>
 </template>
@@ -28,8 +28,8 @@ export default {
   methods: {
     submit() {
       this.$message({
-        message: 'User information has been updated successfully',
-        type: 'success',
+        message: '用户信息更新成功',
+        type: '成功',
         duration: 5 * 1000
       })
     }

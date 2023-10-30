@@ -28,7 +28,7 @@ export default {
       }
 
       this.$message({
-        message: 'Please do not upload files larger than 1m in size.',
+        message: '请不要上传超过1m的文件.',
         type: 'warning'
       })
       return false

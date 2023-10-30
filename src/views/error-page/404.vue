@@ -8,13 +8,13 @@
         <img class="pic-404__child right" src="@/assets/404_images/404_cloud.png" alt="404">
       </div>
       <div class="bullshit">
-        <div class="bullshit__oops">OOPS!</div>
-        <div class="bullshit__info">All rights reserved
-          <a style="color:#20a0ff" href="https://wallstreetcn.com" target="_blank">wallstreetcn</a>
+        <div class="bullshit__oops">你想干什么！！！!</div>
+        <div class="bullshit__info">明裕学长@版权所有
+          <a style="color:#20a0ff" href="https://wallstreetcn.com" target="_blank">华尔街中文网</a>
         </div>
         <div class="bullshit__headline">{{ message }}</div>
-        <div class="bullshit__info">Please check that the URL you entered is correct, or click the button below to return to the homepage.</div>
-        <a href="" class="bullshit__return-home">Back to home</a>
+        <div class="bullshit__info">请检查您输入的URL是否正确，或单击下面的按钮返回主页。</div>
+        <a href="" class="bullshit__return-home">回首页</a>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@ export default {
   name: 'Page404',
   computed: {
     message() {
-      return 'The webmaster said that you can not enter this page...'
+      return '您的IP已被记录'
     }
   }
 }

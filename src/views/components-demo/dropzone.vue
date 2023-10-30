@@ -1,9 +1,8 @@
 <template>
   <div class="components-container">
     <aside>
-      Based on <a class="link-type" href="https://github.com/rowanwins/vue-dropzone"> dropzone </a>.
-      Because my business has special needs, and has to upload images to qiniu, so instead of a third party, I chose encapsulate it by myself. It is very simple, you can see the detail code in @/components/Dropzone.
-    </aside>
+      基于<a class="link-type" href="https://github.com/rowanwins/vue-dropzone"> dropzone </a>.
+      因为我的业务有特殊需求，需要上传图片给qiniu，所以我没有选择第三方，而是选择了自己封装。这很简单，你可以在@/components/Dropzone中看到详细的代码。    </aside>
     <div class="editor-container">
       <dropzone id="myVueDropzone" url="https://httpbin.org/post" @dropzone-removedFile="dropzoneR" @dropzone-success="dropzoneS" />
     </div>

@@ -1,9 +1,9 @@
 <template>
   <div class="components-container">
-    <aside><strong>SplitPane</strong> If you've used
+    <aside><strong>分割</strong> 如果你用过
       <a href="https://codepen.io/" target="_blank"> codepen</a>,
-      <a href="https://jsfiddle.net/" target="_blank"> jsfiddle </a>will not be unfamiliar.
-      <a href="https://github.com/PanJiaChen/vue-split-pane" target="_blank"> Github repository</a>
+      <a href="https://jsfiddle.net/" target="_blank"> jsfiddle </a>不会陌生。
+      <a href="https://github.com/PanJiaChen/vue-split-pane" target="_blank"> Github 库</a>
     </aside>
     <split-pane split="vertical" @resize="resize">
       <template slot="paneL">

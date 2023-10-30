@@ -1,7 +1,13 @@
 <template>
   <div class="login-container">
-    <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on"
-      label-position="left">
+    <el-form
+      ref="loginForm"
+      :model="loginForm"
+      :rules="loginRules"
+      class="login-form"
+      autocomplete="on"
+      label-position="left"
+    >
 
       <div class="title-container">
         <h3 class="title">通用后台管理</h3>
@@ -11,8 +17,15 @@
         <span class="svg-container">
           <svg-icon icon-class="user" />
         </span>
-        <el-input ref="username" v-model="loginForm.username" placeholder="用户名" name="username" type="text" tabindex="1"
-          autocomplete="on" />
+        <el-input
+          ref="username"
+          v-model="loginForm.username"
+          placeholder="用户名"
+          name="username"
+          type="text"
+          tabindex="1"
+          autocomplete="on"
+        />
       </el-form-item>
 
       <el-tooltip v-model="capsTooltip" content="Caps lock is On" placement="right" manual>
@@ -20,17 +33,31 @@
           <span class="svg-container">
             <svg-icon icon-class="password" />
           </span>
-          <el-input :key="passwordType" ref="password" v-model="loginForm.password" :type="passwordType" placeholder="密码"
-            name="password" tabindex="2" autocomplete="on" @keyup.native="checkCapslock" @blur="capsTooltip = false"
-            @keyup.enter.native="handleLogin" />
+          <el-input
+            :key="passwordType"
+            ref="password"
+            v-model="loginForm.password"
+            :type="passwordType"
+            placeholder="密码"
+            name="password"
+            tabindex="2"
+            autocomplete="on"
+            @keyup.native="checkCapslock"
+            @blur="capsTooltip = false"
+            @keyup.enter.native="handleLogin"
+          />
           <span class="show-pwd" @click="showPwd">
             <svg-icon :icon-class="passwordType === 'password' ? 'eye' : 'eye-open'" />
           </span>
         </el-form-item>
       </el-tooltip>
 
-      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;"
-        @click.native.prevent="handleLogin">进入</el-button>
+      <el-button
+        :loading="loading"
+        type="primary"
+        style="width:100%;margin-bottom:30px;"
+        @click.native.prevent="handleLogin"
+      >进入</el-button>
 
       <div style="position:relative">
         <div class="sign">
@@ -52,7 +79,7 @@
     </el-form>
 
     <el-dialog title="Or connect with" :visible.sync="showDialog">
-      Can not be simulated on local, so please combine you own business simulation! ! !
+      不能在本地模拟，所以请结合自己的业务模拟!!！
       <br>
       <br>
       <br>
@@ -102,7 +129,7 @@ export default {
   },
   watch: {
     $route: {
-      handler: function (route) {
+      handler: function(route) {
         const query = route.query
         if (query) {
           this.redirect = query.redirect

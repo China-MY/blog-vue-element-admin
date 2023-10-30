@@ -1,12 +1,12 @@
 <template>
   <div class="app-container">
     <div style="margin:0 0 5px 20px">
-      Fixed header, sorted by header order,
+      固定标题，按标题顺序排序，
     </div>
     <fixed-thead />
 
     <div style="margin:30px 0 5px 20px">
-      Not fixed header, sorted by click order
+      标题不固定，按点击顺序排序
     </div>
     <unfixed-thead />
   </div>

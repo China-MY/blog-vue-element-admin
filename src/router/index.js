@@ -137,7 +137,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/profile/index'),
         name: 'Profile',
-        meta: { title: '配置文件', icon: 'user', noCache: true }
+        meta: { title: '个人信息', icon: 'user', noCache: true }
       }
     ]
   }
@@ -152,12 +152,12 @@ export const asyncRoutes = [
     path: '/permission',
     component: Layout,
     redirect: '/permission/page',
-    alwaysShow: true, // will always show the root menu
+    alwaysShow: true, // 会一直显示根菜单
     name: 'Permission',
     meta: {
-      title: '许可',
+      title: '权限',
       icon: 'lock',
-      roles: ['admin', 'editor'] // you can set roles in root nav
+      roles: ['admin', 'editor'] // 可以在“根导航”中设置角色
     },
     children: [
       {
